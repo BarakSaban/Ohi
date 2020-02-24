@@ -9,3 +9,14 @@ try:
         print('\b' * len(positionStr), end='', flush=True)
 except KeyboardInterrupt:
     print('\n')
+#################################################################
+import pyautogui, time 
+
+try:
+    while True:
+        if pyautogui.mouseDown:
+            pyautogui.doubleClick()
+            pyautogui.move(960, 0)
+            pyautogui.doubleClick()
+except KeyboardInterrupt:
+    print('\n')
